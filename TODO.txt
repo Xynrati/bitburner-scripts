@@ -1,0 +1,25 @@
+
+daemon
+	DONE autoroot
+    autosync from web
+	spread remote/
+	xp farm
+	hack targeting
+	stats display for current/next target in -->
+	prep next hack target
+	reminder to buy tor/tools/stonks
+	reminder to join faction
+
+	MAYBE
+	contract finder
+	contract resolver
+	stonks
+	
+information scripts or functions
+	server data
+	player data
+formatted table function for complex objects
+	using doc, allow formulas for colorings
+	use html table?
+
+
