@@ -1,11 +1,11 @@
 import { NS } from '../types/index.js';
-import { getRootedServers } from 'helpers.js';
+import * as helper from 'helpers.js';
 
 export async function main(ns: NS) {
 	const victim = (ns.args[0] as string) || 'joesguns';
 	const scripts = ['/Remote/weaken.js', '/Remote/grow.js'];
 	const scriptRam = 1.75;
-	const servers = getRootedServers(ns);
+	const servers = helper.getRootedServers(ns);
 	ns.tprint('Throw caution to the wind');
 
 	for (const server of servers) {

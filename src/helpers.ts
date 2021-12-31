@@ -21,9 +21,7 @@ export function getServers(ns: NS) {
 
 /** @param {NS} ns */
 export function getRootedServers(ns: NS) {
-	for (const server of getServers(ns).filter(
-		(x) => !ns.hasRootAccess(x) && !ns.getPurchasedServers().includes(x) && x != 'home'
-	)) {
+	for (const server of getServers(ns).filter((x) => !ns.hasRootAccess(x) && !ns.getPurchasedServers().includes(x) && x != 'home')) {
 		for (const tool of [ns.brutessh, ns.ftpcrack, ns.relaysmtp, ns.httpworm, ns.sqlinject, ns.nuke]) {
 			try {
 				tool(server);

@@ -19,7 +19,7 @@ information scripts or functions
 	server data
 	player data
 formatted table function for complex objects
-	using doc, allow formulas for colorings
+	using doc, allow funcs for colorings
 	use html table?
 
 

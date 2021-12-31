@@ -1,0 +1,5 @@
+{
+	"bitburner.scriptRoot": "./dist",
+	"bitburner.showFileWatcherEnabledNotification": true,
+	"bitburner.fileWatcher.enable": true
+}

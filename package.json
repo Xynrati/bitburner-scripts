@@ -1,26 +1,39 @@
 {
-  "scripts": {
-    "start": "npx tsc"
-  },
-  "devDependencies": {
-    "typescript": "^4.5.4"
-  },
-  "name": "bitburner-scripts",
-  "description": "This my hodge-podge of terrible bitburner scripts",
-  "version": "1.0.0",
-  "main": ".eslintrc.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Xynrati/bitburner-scripts.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Xynrati/bitburner-scripts/issues"
-  },
-  "homepage": "https://github.com/Xynrati/bitburner-scripts#readme",
-  "dependencies": {
-    "log-timestamp": "^0.3.0"
-  }
+	"scripts": {
+		"list": "npx tsc -b --clean && npx tsc -b",
+		"just-ts": "npx tsc -w",
+		"start": "npm-watch"
+	},
+	"devDependencies": {
+		"npm-watch": "^0.11.0",
+		"typescript": "^4.5.4"
+	},
+	"watch": {
+		"list": {
+			"patterns": [
+				"src"
+			],
+			"extensions": "ts",
+			"quiet": false
+		}
+	},
+	"name": "bitburner-scripts",
+	"description": "This my hodge-podge of terrible bitburner scripts",
+	"version": "1.0.0",
+	"main": ".eslintrc.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Xynrati/bitburner-scripts.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Xynrati/bitburner-scripts/issues"
+	},
+	"homepage": "https://github.com/Xynrati/bitburner-scripts#readme",
+	"dependencies": {
+		"log-timestamp": "^0.3.0",
+		"yarn": "^1.22.17"
+	}
 }
