@@ -9,7 +9,7 @@ export async function main(ns: NS) {
 	ns.tprint('Throw caution to the wind');
 
 	for (const server of servers) {
-		if (server != 'home') ns.killall(server);
+		scripts.forEach((x) => ns.scriptKill(x, server));
 		await ns.scp(scripts, 'home', server);
 	}
 
